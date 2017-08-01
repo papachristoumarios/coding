@@ -21,8 +21,8 @@ class Graph {
 		lint astronauts() {
 			int result = 0;
             for (lint i = 0; i < N; i++) if (visited[i] == false) {result += bfs(i);}
-			if (N % 2 == 0) return (N/2)*(N-1)-result;
-            else return N*((N-1)/2) - result; 
+			return (N * (N-1)) / 2; // Number of pairs C(n,2)
+			 
         }
 		
 		lint bfs(lint root) {
